@@ -1,84 +1,67 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 
-public class Scr : MonoBehaviour {
+public class scr : MonoBehaviour {
     private MLInputController _controller;
-    public GameObject tempoBox;
-    private GameObject instrumentToggle;
-    private GameObject currentNote;
-    private GameObject metronomeButton;
-    int tempo = 0;
-    string key = "A";
-    private GameObject _cube;
-    private bool _bumper;
-    private bool _enabled;
-    private int _rotationSpeed;
-    private Vector3 _moveSpeed;
-    private Vector3 _distance;
+    private ComboRaycastHead head;
+    public AudioSource MusicSource;
+    public AudioClip MusicClip;
 
-    //Vectors that describe where the controller is pointing to
-    private Vector3 forward;
-    private Vector3 right;
-    private Vector3 force;
-
-    void Awake()
+    private void Start()
     {
-        _cube = GameObject.Find("Cube");
-        _cube.SetActive(false);
-        MLInput.Start();
-        MLInput.OnControllerButtonDown += OnButtonDown;
+        MLInput.Start(); // to start receiving input from the controller
+        MLInput.OnControllerButtonDown += OnButtonDown; // a listener function that listens for the button input.
         MLInput.OnControllerButtonUp += OnButtonUp;
-        _controller = MLInput.GetController(MLInput.Hand.Left);
-    }
-
-    void OnDestroy()
-    {
-        MLInput.OnControllerButtonDown -= OnButtonDown;
-        MLInput.OnControllerButtonUp -= OnButtonUp;
-        MLInput.Stop();
-    }
-
-    void Update()
-    {
-        if (!_bumper && _enabled)
-        {
-        }
-        CheckControl();
-    }
-
-    void CheckControl()
-    {
-        if (_controller.TriggerValue > 0.2f && _enabled)
-        {
-            _bumper = false;
-            _cube.transform.Rotate(Vector3.up, -_rotationSpeed * Time.deltaTime);
-        }
-        else if (_controller.Touch1PosAndForce.z > 0.0f && _enabled)
-        {
-            float X = _controller.Touch1PosAndForce.x;
-            float Y = _controller.Touch1PosAndForce.y;
-            forward = Vector3.Normalize(Vector3.ProjectOnPlane(transform.forward, Vector3.up));
-            right = Vector3.Normalize(Vector3.ProjectOnPlane(transform.right, Vector3.up));
-            force = Vector3.Normalize((X * right) + (Y * forward));
-        }
-    }
-
-    void OnButtonDown(byte controller_id, MLInputControllerButton button)
-    {
-
+        _controller = MLInput.GetController(MLInput.Hand.Left); //left or right it doesn’t really matter
+        Debug.Log("Starting...");
+        MusicSource.clip = MusicClip;
+        //MusicSource.Play();
     }
 
     void OnButtonUp(byte controller_id, MLInputControllerButton button)
     {
+        MusicSource.Stop();
     }
 
-    // Use this for initialization
-    void Start () {
-        tempoBox = GameObject.Find("Cube");
-        instrumentToggle = GameObject.Find("Cube (1)");
-        currentNote = GameObject.Find("Cube (2)");
-        metronomeButton = GameObject.Find("Cylinder");
+    private void OnButtonDown(byte controllerID, MLInputControllerButton button)
+    {
+        Debug.Log("Button has been pressed!");
+        RaycastHit hit;
+        MusicSource.Play();
+        if (Physics.Raycast(_controller.Position, transform.forward, out hit))
+        {
+            Debug.Log("Object Hit!");
+            //Debug.DrawRay(hit.point, hit.normal, Color.blue);
+            if (button == MLInputControllerButton.Bumper)
+            {
+                Debug.Log("started");
+                Debug.Log("Object Hit!");
+                MusicSource.Play();
+            }
+        }
     }
-	}
+
+    
+    private void OnDestroy()
+    {
+        MLInput.Stop();
+        MLInput.OnControllerButtonDown -= OnButtonDown;
+    }
+
+    private void Update()
+    {
+        transform.position = _controller.Position;   // a Vector3 quantity
+        transform.rotation = _controller.Orientation;    // a Quaternion quantity
+        Vector3 forward = transform.forward * 10;
+        GameObject myLine = new GameObject();
+        myLine.transform.position = transform.position;
+        myLine.AddComponent<LineRenderer>();
+        LineRenderer lr = myLine.GetComponent<LineRenderer>();
+        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+        lr.SetPosition(0, transform.position);
+        lr.SetPosition(1, transform.forward * 10);
+        GameObject.Destroy(myLine, 0);
+
+    }
+}
