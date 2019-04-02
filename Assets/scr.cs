@@ -31,7 +31,7 @@ public class scr : MonoBehaviour {
         Debug.Log("Button has been pressed!");
         RaycastHit hit;
         //Debug.DrawRay(_controller.Orientation * _controller.Position, transform.forward);
-        Debug.DrawRay(_controller.Orientation * _controller.Position, transform.forward, Color.red, 15.0f);
+        Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles, Color.red, 15.0f);
         MusicSource.Play();
         if (Physics.Raycast(_controller.Position, _controller.Orientation.eulerAngles, out hit))
         {
@@ -56,7 +56,7 @@ public class scr : MonoBehaviour {
         transform.position = _controller.Position;   // a Vector3 quantity
         transform.rotation = _controller.Orientation;    // a Quaternion quantity
         //Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles * 20, Color.yellow, .5f);
-        
+        /*
         GameObject myLine = new GameObject();
         myLine.transform.position = transform.position;
         myLine.AddComponent<LineRenderer>();
@@ -68,7 +68,7 @@ public class scr : MonoBehaviour {
         lr.SetPosition(0, _controller.Orientation * _controller.Position);
         lr.SetPosition(1, transform.forward * 20);
         GameObject.Destroy(myLine, .1f);
-        
-
+        */
+        Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles, Color.red, 15.0f);
     }
 }
