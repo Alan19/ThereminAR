@@ -24,25 +24,27 @@ public class scr : MonoBehaviour {
         MusicSource.Stop();
     }
 
+
     private void OnButtonDown(byte controllerID, MLInputControllerButton button)
     {
+        Debug.DrawRay(transform.position, transform.forward, Color.green);
         Debug.Log("Button has been pressed!");
         RaycastHit hit;
+        //Debug.DrawRay(_controller.Orientation * _controller.Position, transform.forward);
+        Debug.DrawRay(_controller.Orientation * _controller.Position, transform.forward, Color.red, 15.0f);
         MusicSource.Play();
-        if (Physics.Raycast(_controller.Position, transform.forward, out hit))
+        if (Physics.Raycast(_controller.Position, _controller.Orientation.eulerAngles, out hit))
         {
             Debug.Log("Object Hit!");
-            //Debug.DrawRay(hit.point, hit.normal, Color.blue);
+            Debug.Log(hit.collider.name);
             if (button == MLInputControllerButton.Bumper)
             {
-                Debug.Log("started");
-                Debug.Log("Object Hit!");
                 MusicSource.Play();
             }
         }
     }
 
-    
+
     private void OnDestroy()
     {
         MLInput.Stop();
@@ -53,15 +55,20 @@ public class scr : MonoBehaviour {
     {
         transform.position = _controller.Position;   // a Vector3 quantity
         transform.rotation = _controller.Orientation;    // a Quaternion quantity
-        Vector3 forward = transform.forward * 10;
+        //Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles * 20, Color.yellow, .5f);
+        
         GameObject myLine = new GameObject();
         myLine.transform.position = transform.position;
         myLine.AddComponent<LineRenderer>();
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
-        lr.SetPosition(0, transform.position);
-        lr.SetPosition(1, transform.forward * 10);
-        GameObject.Destroy(myLine, 0);
+        lr.startWidth = .1f;
+        lr.endWidth = .1f;
+        //Debug.Log(_controller.Position);
+        lr.SetPosition(0, _controller.Orientation * _controller.Position);
+        lr.SetPosition(1, transform.forward * 20);
+        GameObject.Destroy(myLine, .1f);
+        
 
     }
 }
