@@ -7,39 +7,50 @@ public class scr : MonoBehaviour {
     private ComboRaycastHead head;
     public AudioSource MusicSource;
     public AudioClip MusicClip;
+    public TextMesh note;
+
+    public GameObject RayIndicator;
+    private bool playingMelody = false;
 
     private void Start()
     {
+
         MLInput.Start(); // to start receiving input from the controller
         MLInput.OnControllerButtonDown += OnButtonDown; // a listener function that listens for the button input.
         MLInput.OnControllerButtonUp += OnButtonUp;
         _controller = MLInput.GetController(MLInput.Hand.Left); //left or right it doesn’t really matter
         Debug.Log("Starting...");
-        MusicSource.clip = MusicClip;
         //MusicSource.Play();
     }
 
     void OnButtonUp(byte controller_id, MLInputControllerButton button)
     {
-        MusicSource.Stop();
+        if (playingMelody)
+        {
+            MusicSource.Stop();
+            playingMelody = false;
+        }
+        if (note != null) note.text = "";
     }
 
 
     private void OnButtonDown(byte controllerID, MLInputControllerButton button)
     {
-        Debug.DrawRay(transform.position, transform.forward, Color.green);
         Debug.Log("Button has been pressed!");
         RaycastHit hit;
-        //Debug.DrawRay(_controller.Orientation * _controller.Position, transform.forward);
-        Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles, Color.red, 15.0f);
-        MusicSource.Play();
-        if (Physics.Raycast(_controller.Position, _controller.Orientation.eulerAngles, out hit))
+        if (Physics.Raycast(_controller.Position, _controller.Orientation * Vector3.forward, out hit))
         {
-            Debug.Log("Object Hit!");
-            Debug.Log(hit.collider.name);
-            if (button == MLInputControllerButton.Bumper)
+            hit.collider.gameObject.GetComponent<RaycastHitHandler>().HandleRaycastHit(hit);
+            Debug.Log("Object Hit! " + hit.collider.name);
+            if (button == MLInputControllerButton.Bumper && hit.collider.gameObject.name.Equals("PlayableArea"))
             {
+                MusicSource.clip = MusicClip;
                 MusicSource.Play();
+                playingMelody = true;
+                if (note != null)
+                {
+                    note.text = "C";
+                }
             }
         }
     }
@@ -50,25 +61,9 @@ public class scr : MonoBehaviour {
         MLInput.Stop();
         MLInput.OnControllerButtonDown -= OnButtonDown;
     }
-
     private void Update()
     {
-        transform.position = _controller.Position;   // a Vector3 quantity
-        transform.rotation = _controller.Orientation;    // a Quaternion quantity
-        //Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles * 20, Color.yellow, .5f);
-        /*
-        GameObject myLine = new GameObject();
-        myLine.transform.position = transform.position;
-        myLine.AddComponent<LineRenderer>();
-        LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
-        lr.startWidth = .1f;
-        lr.endWidth = .1f;
-        //Debug.Log(_controller.Position);
-        lr.SetPosition(0, _controller.Orientation * _controller.Position);
-        lr.SetPosition(1, transform.forward * 20);
-        GameObject.Destroy(myLine, .1f);
-        */
-        Debug.DrawRay(_controller.Position, _controller.Orientation.eulerAngles, Color.red, 15.0f);
+        RayIndicator.transform.position = _controller.Position;
+        RayIndicator.transform.rotation = _controller.Orientation;
     }
 }
