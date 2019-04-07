@@ -6,9 +6,12 @@ ThereminAR
 ![Screenshot software](https://github.com/Alan19/ThereminAR/blob/master/ThereminAR%20Main%20Screen.png)
 
 ## Usage
-1. Have a Unity version that supports Magic Leap and Magic Leap Remote
+1. Have a Unity version that supports Magic Leap and Magic Leap Remote.
 1. Use```$ git clone https://github.com/Alan19/ThereminAR.git```.
-1. Open the cloned project in Unity
+1. Open the cloned project in Unity.
+1. Open Magic Leap Remote and start a ZI virtual server or a ZI server on the Magic Leap.
+1. Enable Zero Iteration in Unity.
+1. Hit play.
 
 ## Contributors
 Gwen Munson
