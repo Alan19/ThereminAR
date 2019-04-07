@@ -1,9 +1,9 @@
 ThereminAR
 ======
-**ThereminAR** is a app for the Magic Leap. It will be demoed at ImagineRIT.
+**ThereminAR** is a app for the Magic Leap. It will be featured at the Play Music with Augmented Reality booth during ImagineRIT.
 
 #### Screenshot
-![Screenshot software](https://github.com/Alan19/ThereminAR/blob/master/Screenshot%20(105).png?raw=true)
+![Screenshot software](https://github.com/Alan19/ThereminAR/blob/master/ThereminAR%20Main%20Screen.png)
 
 ## Usage
 1. Have a Unity version that supports Magic Leap and Magic Leap Remote
@@ -12,6 +12,7 @@ ThereminAR
 
 ## Contributors
 Gwen Munson
+
 Alan Xiao
 
 ### Third party libraries
