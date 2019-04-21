@@ -57,3 +57,7 @@ crashlytics-build.properties
 
 
 MLRemote.bat - Shortcut.lnk
+*.mpk
+rithci.cert
+*.privkey
+privatekey.zip

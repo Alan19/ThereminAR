@@ -1,0 +1,387 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/alanx/MagicLeap/mlsdk/v0.19.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "3c218f531310ede6ddb8fb500fdf5af8f45baeeb",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\libc++_shared.so-047ed346d3047118",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "dabf348b332af34a80e35bc1584d14537baf9ad5",
+   "pkgpath": "Data/095890d8c9bde1a45b549a17e6e6f961",
+   "size": 5036,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/095890d8c9bde1a45b549a17e6e6f961"
+  },
+  {
+   "compression": 8,
+   "hash": "4949f6d2b5d2c67afa08dbf68ab5c8c3e49ec525",
+   "pkgpath": "Data/170c02e10c121294486c57133d65b5cc",
+   "size": 50074,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/170c02e10c121294486c57133d65b5cc"
+  },
+  {
+   "compression": 8,
+   "hash": "cd3d81e3d82ad27ad9fff5e01fdaa948d301f3e5",
+   "pkgpath": "Data/1e71f539decd80f4bb2541c46a153223",
+   "size": 50094,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/1e71f539decd80f4bb2541c46a153223"
+  },
+  {
+   "compression": 8,
+   "hash": "b43467e117fcc51ec4da91b1050e665c3b5542c8",
+   "pkgpath": "Data/2b303258409019f428ed17a87cda4ac9",
+   "size": 50342,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/2b303258409019f428ed17a87cda4ac9"
+  },
+  {
+   "compression": 8,
+   "hash": "dbff325bfad543a7260e42d0a4f2403f040152b1",
+   "pkgpath": "Data/479521f96370b384d810a07599e7b084",
+   "size": 50254,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/479521f96370b384d810a07599e7b084"
+  },
+  {
+   "compression": 8,
+   "hash": "2469df024d59ad317a7e76013bc82f408d5efefe",
+   "pkgpath": "Data/51731a8a220e240478717934f6e99543",
+   "size": 49482,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/51731a8a220e240478717934f6e99543"
+  },
+  {
+   "compression": 8,
+   "hash": "efa6b8f8eee29eb940c9f345d15299af3c4563c9",
+   "pkgpath": "Data/63e7f9bd47d71334aa0ffb67cc5bbfb1",
+   "size": 49654,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/63e7f9bd47d71334aa0ffb67cc5bbfb1"
+  },
+  {
+   "compression": 8,
+   "hash": "edef7ddee8b73c5861e9c05cb4969d178222ed12",
+   "pkgpath": "Data/7f93338dc6150ea45b387e442e8102da",
+   "size": 49366,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/7f93338dc6150ea45b387e442e8102da"
+  },
+  {
+   "compression": 8,
+   "hash": "65df50cd3f774b7dba4a1b741a61d0511e750f4b",
+   "pkgpath": "Data/8401b9c91b47d6449a4be596c8138a90",
+   "size": 50466,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/8401b9c91b47d6449a4be596c8138a90"
+  },
+  {
+   "compression": 8,
+   "hash": "4ad51582405d12865acc4cf8619118f8276f80c0",
+   "pkgpath": "Data/917dc8bcba1c29c4c8bd325b59088d1c",
+   "size": 49310,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/917dc8bcba1c29c4c8bd325b59088d1c"
+  },
+  {
+   "compression": 8,
+   "hash": "beeb2cbd84f6b07806f2a891d30d740eaac6bcbd",
+   "pkgpath": "Data/9c9078c06443df049a2830962f9dd5ef",
+   "size": 49642,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/9c9078c06443df049a2830962f9dd5ef"
+  },
+  {
+   "compression": 8,
+   "hash": "3079dff0240b08ccd66f66a4ae5c6c7eccd6b9a0",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 2789740,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "5a8037b3c0721ac9e0a66acb9393411968ead5b6",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 34034424,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "7f5b7dbefd6e6f2b76f278eef39328eaf78eabc8",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\libil2cpp.so-d4321dfff780ff29",
+   "xfrm_size": 34035182
+  },
+  {
+   "compression": 8,
+   "hash": "dc64ed4bee950e5ce1ab12268f627a3db179e4af",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 220456,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "dbba33fdb77f24e623cfb7ddb70216c71909831e",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\AudioPluginMSASpatializer.so-de4e9084ea31f8c6",
+   "xfrm_size": 221214
+  },
+  {
+   "compression": 8,
+   "hash": "aed32544e1ea67c511396569fcb89b586b15d839",
+   "pkgpath": "bin/UnityEngine.SpatialTracking.dll",
+   "size": 9216,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/UnityEngine.SpatialTracking.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "715f293d231a26472ba1672c3e59f76cb0e5e364",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 65536,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "d93ff7b64d92abd6dbb8419c3348ab5f56ad5ec5",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 728232,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d3806098307ff50182ae7f8a9139276cb43572ec",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\UnityMagicLeap.so-de4e9084ea31f8c6",
+   "xfrm_size": 728990
+  },
+  {
+   "compression": 8,
+   "hash": "a765bb75be250a6992c1a46fc23a55501e369b85",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "3890e00a6eeb9c730667a7c0e82796b66540539b",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\libml_camera_plugin.so-de4e9084ea31f8c6",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "633780c922a0dbfe032638afff9a25e3fc49219f",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 38792,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0f6a40d0f32fee98e1149eca2f94c7d77d0f2fd0",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\libml_mediaplayer_plugin.so-de4e9084ea31f8c6",
+   "xfrm_size": 39550
+  },
+  {
+   "compression": 8,
+   "hash": "5629c7ff5fb59ddc72778d4b9d3dbadcde480998",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 328192,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "dc1423ee40a78f4701880b37e1f07bc4f3500e9d",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3308004,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "1c281a7abd7f0cec77eb390c3aa4d795a656335e",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 393452,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "9bbb5e3aae616602db933abd34140e11132fccea",
+   "pkgpath": "Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json",
+   "size": 438,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "5c18367ea31b7fc24b76d7da35e71558f3327fdc",
+   "pkgpath": "Data/adcae46baa3736748a69f9f489676bd7",
+   "size": 49726,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/adcae46baa3736748a69f9f489676bd7"
+  },
+  {
+   "compression": 8,
+   "hash": "e94169e04982098c15b71dea64d4bb6da942f232",
+   "pkgpath": "Data/boot.config",
+   "size": 76,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "db10e6a9d44b67863ba25a1ac6202614f7533ee7",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 35972,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "8738839ce5b03c885468297f5f7d9f576b1ec4d2",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 37596,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "c14086d9fb939cf1f59b4aef5281278593c31ded",
+   "pkgpath": "Data/level0",
+   "size": 24020,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "571eb12d7aa87ae03ccce926de7eeb72c32917fb",
+   "pkgpath": "Data/level0.resS",
+   "size": 131232,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level0.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "590b9a7aab53cc3a562380f491dcb6b015d89b38",
+   "pkgpath": "Data/level1",
+   "size": 28344,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level1"
+  },
+  {
+   "compression": 8,
+   "hash": "571eb12d7aa87ae03ccce926de7eeb72c32917fb",
+   "pkgpath": "Data/level1.resS",
+   "size": 131232,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level1.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "8a84d73a40ee7ab15981daee3d683a582322cd96",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 106764,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "806e13a7227208698af716bc2b356d56dca42ac4",
+   "pkgpath": "Data/sharedassets0.resource",
+   "size": 1092032,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets0.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "1b0de8289b8bb8ed07c0e65ef1c9400e831f3c27",
+   "pkgpath": "Data/sharedassets1.assets",
+   "size": 7328,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "cbc6a7159b79dc74a5b84cfc99f63eddb26236f8",
+   "pkgpath": "Data/sharedassets1.assets.resS",
+   "size": 349552,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "6ca795437ee0f88ebd1fb2226a72cd6f51b89d4d",
+   "pkgpath": "Data/sharedassets1.resource",
+   "size": 5985152,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "8f59c553fa65e4c62b244f94275fdf50ef6a40e8",
+   "pkgpath": "bin/Player.elf",
+   "size": 22318968,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "989922430efee740efa4313bd82e810327adc925",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\Player.elf-924ef4cbedd6d5c6",
+   "xfrm_size": 22319726
+  },
+  {
+   "compression": 8,
+   "hash": "5e789ae88065f23e7ee0120c0975afce6a6a5fdc",
+   "pkgpath": "manifest.xml",
+   "size": 538,
+   "src": "D:\\UnityProjects\\ThereminAR\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "d2f96eb366e4069a1a46931b8251ddf66d8cda11",
+     "developer_id": "b133746a-6b41-4a2d-9b4a-363238575790"
+    }
+   },
+   "xfrm_hash": "86eecd87ff9a79db61ee3364c95739338196007c",
+   "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\manifest.xml-924ef4cbedd6d5c6",
+   "xfrm_size": 550
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "D:\\UnityProjects\\ThereminAR\\rithci.cert"
+  },
+  "taildata": {
+   "devcert": "D:\\UnityProjects\\ThereminAR\\rithci.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
