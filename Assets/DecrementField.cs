@@ -15,6 +15,11 @@ public class DecrementField : MonoBehaviour, RaycastHitHandler {
         textMesh.text = val.ToString();
     }
 
+    public void HandleRaycastHover(RaycastHit rh)
+    {
+        
+    }
+
     // Use this for initialization
     void Start () {
 		
