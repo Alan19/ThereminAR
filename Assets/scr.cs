@@ -93,6 +93,8 @@ public class scr : MonoBehaviour {
         MLInput.OnTriggerDown -= OnTriggerDown;
     }
 
+    private RaycastHitHandler lastHovered;
+
     private void Update()
     {
         RayIndicator.transform.position = _controller.Position;
@@ -101,7 +103,17 @@ public class scr : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(_controller.Position, _controller.Orientation * Vector3.forward, out hit))
         {
-            hit.collider.gameObject.GetComponent<RaycastHitHandler>().HandleRaycastHover(hit);
+            var handler = hit.collider.gameObject.GetComponent<RaycastHitHandler>();
+            if (handler != null) {
+                handler.OnPoint(_controller.TriggerValue > .1f);
+                if (handler != lastHovered) {
+                    if (lastHovered != null) lastHovered.OnPointLeave(_controller.TriggerValue > .1f);
+                    handler.OnPointEnter(_controller.TriggerValue > .1f);
+                }
+            } else {
+                if (lastHovered != null) lastHovered.OnPointLeave(_controller.TriggerValue > .1f);
+            }
+            lastHovered = handler;
         }
     }
 }

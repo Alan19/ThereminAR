@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
-public interface RaycastHitHandler
+public abstract class RaycastHitHandler
 {
-    void HandleRaycastHit(RaycastHit rh);
-    void HandleRaycastHover(RaycastHit rh);
+    abstract void OnPointEnter(bool down);
+    abstract void OnPoint(bool down);
+    abstract void OnPointLeave(bool down);
 }
