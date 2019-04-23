@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncrementField : MonoBehaviour, RaycastHitHandler {
+public class IncrementField : RaycastHitHandler {
     public TextMesh textMesh;
 
     public void HandleRaycastHit(RaycastHit rh)
@@ -12,6 +12,21 @@ public class IncrementField : MonoBehaviour, RaycastHitHandler {
         Int32.TryParse(textMesh.text, out val);
         val++;
         textMesh.text = val.ToString();
+    }
+
+    public override void OnPoint(bool down)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void OnPointEnter(bool down)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void OnPointLeave(bool down)
+    {
+        throw new NotImplementedException();
     }
 
     // Use this for initialization

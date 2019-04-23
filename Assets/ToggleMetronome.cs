@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
+public class ToggleMetronome : RaycastHitHandler {
     bool on = false;
     public AudioSource MusicSource;
     public AudioClip MusicClip;
@@ -31,4 +31,19 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
 	void Update () {
 		
 	}
+
+    public override void OnPointEnter(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPoint(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPointLeave(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
 }

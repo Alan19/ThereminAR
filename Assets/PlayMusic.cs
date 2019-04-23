@@ -2,12 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayMusic : MonoBehaviour, RaycastHitHandler {
+public class PlayMusic : RaycastHitHandler {
 
     public void HandleRaycastHit(RaycastHit rh)
     {
         GetComponent<MeshRenderer>().enabled = true;
         return;
+    }
+
+    public override void OnPoint(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPointEnter(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPointLeave(bool down)
+    {
+        throw new System.NotImplementedException();
     }
 
     // Use this for initialization

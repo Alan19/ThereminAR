@@ -29,7 +29,7 @@ public class scr : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(_controller.Position, _controller.Orientation * Vector3.forward, out hit))
         {
-            hit.collider.gameObject.GetComponent<RaycastHitHandler>().HandleRaycastHit(hit);
+            hit.collider.gameObject.GetComponent<RaycastHitHandler>().OnPoint(true);
             Debug.Log("Object Hit! " + hit.collider.name);
             if (triggerVal > .1f && hit.collider.gameObject.name.Equals("PlayableArea"))
             {
@@ -71,7 +71,7 @@ public class scr : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(_controller.Position, _controller.Orientation * Vector3.forward, out hit))
         {
-            hit.collider.gameObject.GetComponent<RaycastHitHandler>().HandleRaycastHit(hit);
+            hit.collider.gameObject.GetComponent<RaycastHitHandler>().OnPoint(true);
             Debug.Log("Object Hit! " + hit.collider.name);
             if (_controller.TriggerValue > .1f && hit.collider.gameObject.name.Equals("PlayableArea"))
             {

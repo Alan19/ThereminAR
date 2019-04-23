@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LastInstrument : MonoBehaviour, RaycastHitHandler {
+public class LastInstrument : RaycastHitHandler {
     public TextMesh textMesh;
 
     public void HandleRaycastHit(RaycastHit rh)
@@ -11,6 +11,21 @@ public class LastInstrument : MonoBehaviour, RaycastHitHandler {
         {
             textMesh.text = "Piano";
         }
+    }
+
+    public override void OnPoint(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPointEnter(bool down)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnPointLeave(bool down)
+    {
+        throw new System.NotImplementedException();
     }
 
     // Use this for initialization
