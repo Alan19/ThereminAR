@@ -6,6 +6,7 @@ public class NoteBar : RaycastHitHandler {
     public AudioSource MusicSource;
     public bool playing;
     public int notePosition;
+    public String note;
 
     public override void OnPoint(bool down)
     {
@@ -41,7 +42,7 @@ public class NoteBar : RaycastHitHandler {
     // Use this for initialization
     void Start () {
         rend = GetComponent<Renderer>();
-        MusicSource.clip = getSound(0);
+        MusicSource.clip = scr.notes[notePosition];
         playing = false;
     }
 

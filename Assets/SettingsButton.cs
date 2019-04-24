@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartButton : RaycastHitHandler {
+public class SettingsButton : RaycastHitHandler {
     public override void OnPoint(bool down)
     {
         if (down)
         {
-            SceneManager.LoadScene("BasicScene");
+            SceneManager.LoadScene("Settings Scene");
         }
     }
 

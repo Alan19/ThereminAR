@@ -8,13 +8,15 @@ public class scr : MonoBehaviour {
     public AudioSource MusicSource;
     public AudioClip MusicClip;
     public TextMesh note;
+    public static AudioClip[] notes = new AudioClip[8] { null, null, null, null, null, null, null, null };
+    public String[] instruments = new String[2]{"Piano", "Violin"};
 
     public GameObject RayIndicator;
     private bool playingMelody = false;
 
     private void Start()
     {
-
+        
         MLInput.Start(); // to start receiving input from the controller
         MLInput.OnTriggerUp += OnTriggerUp; // a listener function that listens for the button input.
         MLInput.OnTriggerDown += OnTriggerDown;
