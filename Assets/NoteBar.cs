@@ -46,11 +46,6 @@ public class NoteBar : RaycastHitHandler {
         playing = false;
     }
 
-    private AudioClip getSound(int v)
-    {
-        throw new NotImplementedException();
-    }
-
     // Update is called once per frame
     void Update () {
 		
