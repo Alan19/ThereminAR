@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveButtonPopUp : RaycastHitHandler {
+public class SaveButtonPopUp : MonoBehaviour, RaycastHitHandler {
     public TextMesh text;
 
     public void HandleRaycastHit(RaycastHit rh)
@@ -10,17 +10,17 @@ public class SaveButtonPopUp : RaycastHitHandler {
         text.text = "Composition Saved!";
     }
 
-    public override void OnPoint(bool down)
+    public void OnPoint(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         throw new System.NotImplementedException();
     }

@@ -1,7 +1,8 @@
-﻿using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class StartButton : RaycastHitHandler {
-    public override void OnPoint(bool down)
+public class StartButton : MonoBehaviour, RaycastHitHandler {
+    public void OnPoint(bool down)
     {
         if (down)
         {
@@ -9,12 +10,12 @@ public class StartButton : RaycastHitHandler {
         }
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         throw new System.NotImplementedException();
     }

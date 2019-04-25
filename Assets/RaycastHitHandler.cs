@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public abstract class RaycastHitHandler : MonoBehaviour
+public interface RaycastHitHandler
 {
-    public abstract void OnPointEnter(bool down);
-    public abstract void OnPoint(bool down);
-    public abstract void OnPointLeave(bool down);
+    void OnPointEnter(bool down);  
+    void OnPoint(bool down);
+    void OnPointLeave(bool down);
 }

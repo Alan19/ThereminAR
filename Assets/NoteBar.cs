@@ -1,14 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-public class NoteBar : RaycastHitHandler {
+public class NoteBar : MonoBehaviour, RaycastHitHandler {
     public Renderer rend;
     public AudioSource MusicSource;
     public bool playing;
     public int notePosition;
     public String note;
 
-    public override void OnPoint(bool down)
+    public void OnPoint(bool down)
     {
         if (down && playing == false)
         {
@@ -20,7 +20,7 @@ public class NoteBar : RaycastHitHandler {
         }
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         rend.enabled = true;
         if (down && playing == false)
@@ -33,7 +33,7 @@ public class NoteBar : RaycastHitHandler {
         }
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         rend.enabled = false;
         MusicSource.Stop();

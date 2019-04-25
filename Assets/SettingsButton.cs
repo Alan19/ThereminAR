@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SettingsButton : RaycastHitHandler {
-    public override void OnPoint(bool down)
+public class SettingsButton : MonoBehaviour, RaycastHitHandler {
+    public void OnPoint(bool down)
     {
         if (down)
         {
@@ -12,12 +12,12 @@ public class SettingsButton : RaycastHitHandler {
         }
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         throw new System.NotImplementedException();
     }

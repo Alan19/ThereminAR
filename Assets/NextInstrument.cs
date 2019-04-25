@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NextInstrument : RaycastHitHandler {
+public class NextInstrument : MonoBehaviour, RaycastHitHandler {
     public TextMesh textMesh;
 
     public void HandleRaycastHit(RaycastHit rh)
@@ -13,17 +13,17 @@ public class NextInstrument : RaycastHitHandler {
         }
     }
 
-    public override void OnPoint(bool down)
+    public void OnPoint(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         throw new System.NotImplementedException();
     }

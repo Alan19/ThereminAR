@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DecrementField : RaycastHitHandler {
+public class DecrementField : MonoBehaviour, RaycastHitHandler {
 
     public TextMesh textMesh;
 
@@ -20,17 +20,17 @@ public class DecrementField : RaycastHitHandler {
         
     }
 
-    public override void OnPoint(bool down)
+    public void OnPoint(bool down)
     {
         throw new NotImplementedException();
     }
 
-    public override void OnPointEnter(bool down)
+    public void OnPointEnter(bool down)
     {
         throw new NotImplementedException();
     }
 
-    public override void OnPointLeave(bool down)
+    public void OnPointLeave(bool down)
     {
         throw new NotImplementedException();
     }
