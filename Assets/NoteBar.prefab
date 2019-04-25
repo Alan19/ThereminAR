@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33659682366239636}
   - component: {fileID: 23749983046062522}
   - component: {fileID: 65736379237398216}
-  - component: {fileID: 114621655786058972}
   - component: {fileID: 114114451284929048}
   m_Layer: 0
   m_Name: NoteBar
@@ -113,14 +112,4 @@ MonoBehaviour:
   MusicSource: {fileID: 0}
   playing: 0
   notePosition: 0
---- !u!114 &114621655786058972
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1107701587944850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4234dfbde71d7f48b4e692a2c2d6509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  note: 

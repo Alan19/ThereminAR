@@ -22,6 +22,7 @@ public class NoteBar : MonoBehaviour, RaycastHitHandler {
 
     public void OnPointEnter(bool down)
     {
+        Debug.Log("Focusing on bar");
         rend.enabled = true;
         if (down && playing == false)
         {
