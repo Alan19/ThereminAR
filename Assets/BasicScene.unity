@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -246,6 +246,9 @@ MonoBehaviour:
   MusicSource: {fileID: 50078843}
   MusicClip: {fileID: 8300000, guid: 0369d82fd1e9731468b281e51bba3e43, type: 3}
   note: {fileID: 1682507204}
+  instruments:
+  - Piano
+  - Violin
   RayIndicator: {fileID: 1047591245}
 --- !u!82 &50078843
 AudioSource:
@@ -763,7 +766,8 @@ Prefab:
       propertyPath: notePosition
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: c06cce402627e984a93040e25dfad7c3, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &349941782 stripped
@@ -2565,6 +2569,10 @@ Prefab:
       propertyPath: rend
       value: 
       objectReference: {fileID: 1689316455}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c06cce402627e984a93040e25dfad7c3, type: 2}
   m_IsPrefabParent: 0
