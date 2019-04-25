@@ -71,7 +71,6 @@ public class scr : MonoBehaviour {
         {
             handler = hit.collider.gameObject.GetComponent<RaycastHitHandler>();
         }
-        Debug.Log("lastHovered: " + lastHovered + " handler: " + handler);
         try {
             if (handler != null) {
                 handler.OnPoint(_controller.TriggerValue > .1f);

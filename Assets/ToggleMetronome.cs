@@ -6,29 +6,21 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
     bool on = false;
     public AudioSource MusicSource;
     public AudioClip MusicClip;
+    public Material enabledTex;
+    public Material originalMat;
+    public Renderer rend;
 
 
     public void HandleRaycastHit(RaycastHit rh)
     {
-        MusicSource.clip = MusicClip;
-        if (on)
-        {
-            on = false;
-            MusicSource.Stop();
-        }
-        else
-        {
-            on = true;
-            MusicSource.Play();
-        }
     }
 
     // Use this for initialization
     void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -39,7 +31,20 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
 
     public void OnPoint(bool down)
     {
-        throw new System.NotImplementedException();
+        MusicSource.clip = MusicClip;
+        if (on && down)
+        {
+            on = false;
+            MusicSource.Stop();
+            rend.material = originalMat;
+        }
+        else if (!on && down)
+        {
+            on = true;
+            MusicSource.Play();
+            rend.material = enabledTex;
+        }
+
     }
 
     public void OnPointLeave(bool down)

@@ -24,6 +24,7 @@ public class NoteBar : MonoBehaviour, RaycastHitHandler {
     {
         Debug.Log("Focusing on bar");
         rend.enabled = true;
+        Settings.Note = note;
         if (down && playing == false)
         {
             MusicSource.Play();
@@ -38,6 +39,7 @@ public class NoteBar : MonoBehaviour, RaycastHitHandler {
     {
         rend.enabled = false;
         MusicSource.Stop();
+        Settings.Note = "";
     }
 
     // Use this for initialization
