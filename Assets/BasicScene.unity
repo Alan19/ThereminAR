@@ -762,7 +762,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: D
+      value: C
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -1257,7 +1257,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: C
+      value: B
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -1717,7 +1717,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: A
+      value: G
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -2079,7 +2079,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: G
+      value: F
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -2455,7 +2455,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: A
+      value: G
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -2740,11 +2740,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bc84c01259a7c0d4d97e39690fc78f91, type: 3}
   - {fileID: 8300000, guid: 13b2914a32f830d409062f117518344f, type: 3}
   - {fileID: 8300000, guid: 1fbdf8572b8a7c5449e88ec2c5f6feb8, type: 3}
-  - {fileID: 8300000, guid: 4676ebd6a1f900942aed8cd42c710de8, type: 3}
-  - {fileID: 8300000, guid: aaedbd78db239a745a2d87cc15344f26, type: 3}
-  - {fileID: 8300000, guid: e1a1a14df072a0d41ab57175c8d45083, type: 3}
-  - {fileID: 8300000, guid: c8212010650b42b4e89b0b1a6f667246, type: 3}
-  - {fileID: 8300000, guid: bc84c01259a7c0d4d97e39690fc78f91, type: 3}
+  - {fileID: 8300000, guid: 5910901c27b78b044ad6fc15b6777ba7, type: 3}
+  - {fileID: 8300000, guid: ea13bc50d9eb21b4589172b3a752c488, type: 3}
+  - {fileID: 8300000, guid: b297059c472f4524aaa5f3c2642e17ee, type: 3}
+  - {fileID: 8300000, guid: 80f72e07b80b22f4d8c2b3310d998787, type: 3}
+  - {fileID: 8300000, guid: 9030378f79b831a47b44a5446746cbbb, type: 3}
 --- !u!4 &1614826470
 Transform:
   m_ObjectHideFlags: 0
@@ -3025,7 +3025,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: E
+      value: D
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -3432,7 +3432,9 @@ MonoBehaviour:
   enableMat: {fileID: 2100000, guid: 981bbd7a459c7ec488cb9bff2df75e84, type: 2}
   originalMat: {fileID: 2100000, guid: 1bdc4d8e0dd509f4e93cc0bfc118e492, type: 2}
   rend: {fileID: 1827377129}
-  cooldown: 1
+  buttonCooldown: 1
+  tempoCoolDown: 0
+  tickCooldown: 0
 --- !u!82 &1827377133
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3797,7 +3799,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: B
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
@@ -3970,7 +3972,7 @@ Prefab:
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}
       propertyPath: note
-      value: F
+      value: E
       objectReference: {fileID: 0}
     - target: {fileID: 114114451284929048, guid: c06cce402627e984a93040e25dfad7c3,
         type: 2}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,9 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
     public Material enableMat;
     public Material originalMat;
     public Renderer rend;
-    public double cooldown = 1.0f;
+    public double buttonCooldown = 1.0f;
+    public double tempoCoolDown;
+    public double tickCooldown;
 
 
     public void HandleRaycastHit(RaycastHit rh)
@@ -18,12 +21,24 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
 
     // Use this for initialization
     void Start () {
-        MusicSource.loop = true;
+        tempoCoolDown = 1f/(Int32.Parse(Settings.getSetting("tempo"))/60.0f);
+        tickCooldown = tempoCoolDown;
     }
 
     // Update is called once per frame
     void Update () {
-        cooldown -= Time.deltaTime;
+        tempoCoolDown = 1f / (Int32.Parse(Settings.getSetting("tempo")) / 60.0f);
+        buttonCooldown -= Time.deltaTime;
+        tickCooldown -= Time.deltaTime;
+        if (on && tickCooldown < 0)
+        {
+            MusicSource.Play();
+            tickCooldown = tempoCoolDown;
+        }
+        else if (!on)
+        {
+            MusicSource.Stop();
+        }
 	}
 
     public void OnPointEnter(bool down)
@@ -34,22 +49,20 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
     public void OnPoint(bool down)
     {
         MusicSource.clip = MusicClip;
-        if(cooldown < 0)
+        if(buttonCooldown < 0)
         {
             if (on && down)
             {
                 on = false;
-                MusicSource.Stop();
                 rend.material = originalMat;
-                cooldown = 1.0f;
+                buttonCooldown = 1.0f;
 
             }
             else if (!on && down)
             {
                 on = true;
-                MusicSource.Play();
                 rend.material = enableMat;
-                cooldown = 1.0f;
+                buttonCooldown = 1.0f;
 
             }
 
