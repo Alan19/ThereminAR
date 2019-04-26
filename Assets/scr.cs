@@ -6,10 +6,6 @@ public class scr : MonoBehaviour {
     private MLInputController _controller;
     private ComboRaycastHead head;
     public AudioSource MusicSource;
-    public AudioClip MusicClip;
-    public TextMesh note;
-    public static AudioClip[] notes = new AudioClip[8];
-    public String[] instruments = new String[2]{"Piano", "Violin"};
 
     public GameObject RayIndicator;
     private bool playingMelody = false;
@@ -20,18 +16,8 @@ public class scr : MonoBehaviour {
         _controller = MLInput.GetController(MLInput.Hand.Left); //left or right it doesn’t really matter
         Debug.Log("Starting...");
         //MusicSource.Play();
+        MusicSource.loop = true;
     }
-
-    void OnButtonUp(byte controller_id, MLInputControllerButton button)
-    {
-        if (playingMelody)
-        {
-            MusicSource.Stop();
-            playingMelody = false;
-        }
-        if (note != null) note.text = "";
-    }
-
 
     private void OnButtonDown(byte controllerID, MLInputControllerButton button)
     {
@@ -41,16 +27,6 @@ public class scr : MonoBehaviour {
         {
             hit.collider.gameObject.GetComponent<RaycastHitHandler>().OnPoint(true);
             Debug.Log("Object Hit! " + hit.collider.name);
-            if (_controller.TriggerValue > .1f && hit.collider.gameObject.name.Equals("PlayableArea"))
-            {
-                MusicSource.clip = MusicClip;
-                MusicSource.Play();
-                playingMelody = true;
-                if (note != null)
-                {
-                    note.text = "C";
-                }
-            }
         }
     }
 

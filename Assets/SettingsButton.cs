@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SettingsButton : MonoBehaviour, RaycastHitHandler {
+
     public void OnPoint(bool down)
     {
         if (down)

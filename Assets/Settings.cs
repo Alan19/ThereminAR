@@ -7,7 +7,7 @@ public class Settings : MonoBehaviour {
 
     public static string Key = "C";
     public static string Note = "";
-    public static string Instrument = "Flute";
+    public static string Instrument = "Violin";
     public static int Tempo = 130;
 
     internal static string getSetting(string setting)
@@ -43,13 +43,13 @@ public class Settings : MonoBehaviour {
                 }
                 break;
             case "instrument":
-                if (Instrument.Equals("Flute") && amount == 1)
+                if (Instrument.Equals("Piano") && amount == 1)
+                {
+                    Instrument = "Violin";
+                }
+                else if (Instrument.Equals("Violin") && amount == -1)
                 {
                     Instrument = "Piano";
-                }
-                else if (Instrument.Equals("Piano") && amount == -1)
-                {
-                    Instrument = "Flute";
                 }
                 break;
             case "tempo":

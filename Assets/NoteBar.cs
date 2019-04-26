@@ -3,49 +3,49 @@ using UnityEngine;
 
 public class NoteBar : MonoBehaviour, RaycastHitHandler {
     public Renderer rend;
+    private AudioClip thisClip;
     public AudioSource MusicSource;
     public bool playing;
     public int notePosition;
     public String note;
+    public GameObject musicObject;
 
     public void OnPoint(bool down)
     {
-        if (down && playing == false)
+        Settings.Note = note;
+        MusicSource.clip = thisClip;
+        if (down && !playing)
         {
             MusicSource.Play();
+            playing = true;
         }
         else if(!down && playing)
         {
             MusicSource.Stop();
+            playing = false;
         }
     }
 
     public void OnPointEnter(bool down)
     {
-        Debug.Log("Focusing on bar");
         rend.enabled = true;
-        Settings.Note = note;
-        if (down && playing == false)
-        {
-            MusicSource.Play();
-        }
-        else if (!down && playing)
-        {
-            MusicSource.Stop();
-        }
     }
 
     public void OnPointLeave(bool down)
     {
         rend.enabled = false;
-        MusicSource.Stop();
+        if (MusicSource.clip.Equals(thisClip)) MusicSource.Stop();
         Settings.Note = "";
+        playing = false;
     }
 
     // Use this for initialization
     void Start () {
         rend = GetComponent<Renderer>();
-        MusicSource.clip = scr.notes[notePosition];
+        MusicHolder holder = musicObject.GetComponent<MusicHolder>();
+        thisClip = holder.GetClip(notePosition);
+        Debug.Log(thisClip);
+
         playing = false;
     }
 
