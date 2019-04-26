@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class NoteBar : MonoBehaviour, RaycastHitHandler {
     public Renderer rend;
+    private MusicHolder holder;
     private AudioClip thisClip;
     public AudioSource MusicSource;
     public bool playing;
@@ -13,7 +14,7 @@ public class NoteBar : MonoBehaviour, RaycastHitHandler {
     public void OnPoint(bool down)
     {
         Settings.Note = note;
-        MusicSource.clip = thisClip;
+        MusicSource.clip = holder.GetClip(notePosition); ;
         if (down && !playing)
         {
             MusicSource.Play();
@@ -42,7 +43,7 @@ public class NoteBar : MonoBehaviour, RaycastHitHandler {
     // Use this for initialization
     void Start () {
         rend = GetComponent<Renderer>();
-        MusicHolder holder = musicObject.GetComponent<MusicHolder>();
+        holder = musicObject.GetComponent<MusicHolder>();
         thisClip = holder.GetClip(notePosition);
         Debug.Log(thisClip);
 
