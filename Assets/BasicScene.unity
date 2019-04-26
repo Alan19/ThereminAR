@@ -380,7 +380,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 58800832}
-  m_Text: "\u2190"
+  m_Text: <
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -1602,7 +1602,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760565518}
-  m_Text: "\u2192"
+  m_Text: '>'
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -2910,7 +2910,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1736082357}
-  m_Text: "\u2190"
+  m_Text: <
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -3428,7 +3428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusicSource: {fileID: 1827377133}
-  MusicClip: {fileID: 8300000, guid: 8d7bb0b948d63954aa6544eca6793c29, type: 3}
+  MusicClip: {fileID: 8300000, guid: d798483bfb87e0642a9d814af66cfeb6, type: 3}
   enableMat: {fileID: 2100000, guid: 981bbd7a459c7ec488cb9bff2df75e84, type: 2}
   originalMat: {fileID: 2100000, guid: 1bdc4d8e0dd509f4e93cc0bfc118e492, type: 2}
   rend: {fileID: 1827377129}
@@ -3682,7 +3682,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1944352358}
-  m_Text: "\u2192"
+  m_Text: '>'
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -3881,6 +3881,16 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 994e54a1e20537845962c3e6908e8da3, type: 2}
+    - target: {fileID: 102600811569323084, guid: 544de5194f957974abbce5d0452cd4aa,
+        type: 2}
+      propertyPath: m_Text
+      value: '>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 102002565005386884, guid: 544de5194f957974abbce5d0452cd4aa,
+        type: 2}
+      propertyPath: m_Text
+      value: <
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 544de5194f957974abbce5d0452cd4aa, type: 2}
   m_IsPrefabParent: 0

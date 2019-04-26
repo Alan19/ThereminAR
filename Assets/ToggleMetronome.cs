@@ -18,6 +18,7 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
 
     // Use this for initialization
     void Start () {
+        MusicSource.loop = true;
     }
 
     // Update is called once per frame
@@ -49,6 +50,7 @@ public class ToggleMetronome : MonoBehaviour, RaycastHitHandler {
                 MusicSource.Play();
                 rend.material = enableMat;
                 cooldown = 1.0f;
+
             }
 
         }

@@ -21,93 +21,23 @@
   },
   {
    "compression": 8,
-   "hash": "dabf348b332af34a80e35bc1584d14537baf9ad5",
+   "hash": "bf14d3895631179e67bdec99c9c6202cd32c07ef",
    "pkgpath": "Data/095890d8c9bde1a45b549a17e6e6f961",
    "size": 5036,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/095890d8c9bde1a45b549a17e6e6f961"
   },
   {
    "compression": 8,
-   "hash": "4949f6d2b5d2c67afa08dbf68ab5c8c3e49ec525",
-   "pkgpath": "Data/170c02e10c121294486c57133d65b5cc",
-   "size": 50074,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/170c02e10c121294486c57133d65b5cc"
-  },
-  {
-   "compression": 8,
-   "hash": "cd3d81e3d82ad27ad9fff5e01fdaa948d301f3e5",
-   "pkgpath": "Data/1e71f539decd80f4bb2541c46a153223",
-   "size": 50094,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/1e71f539decd80f4bb2541c46a153223"
-  },
-  {
-   "compression": 8,
-   "hash": "b43467e117fcc51ec4da91b1050e665c3b5542c8",
-   "pkgpath": "Data/2b303258409019f428ed17a87cda4ac9",
-   "size": 50342,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/2b303258409019f428ed17a87cda4ac9"
-  },
-  {
-   "compression": 8,
-   "hash": "dbff325bfad543a7260e42d0a4f2403f040152b1",
-   "pkgpath": "Data/479521f96370b384d810a07599e7b084",
-   "size": 50254,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/479521f96370b384d810a07599e7b084"
-  },
-  {
-   "compression": 8,
-   "hash": "2469df024d59ad317a7e76013bc82f408d5efefe",
-   "pkgpath": "Data/51731a8a220e240478717934f6e99543",
-   "size": 49482,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/51731a8a220e240478717934f6e99543"
-  },
-  {
-   "compression": 8,
-   "hash": "efa6b8f8eee29eb940c9f345d15299af3c4563c9",
-   "pkgpath": "Data/63e7f9bd47d71334aa0ffb67cc5bbfb1",
-   "size": 49654,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/63e7f9bd47d71334aa0ffb67cc5bbfb1"
-  },
-  {
-   "compression": 8,
-   "hash": "edef7ddee8b73c5861e9c05cb4969d178222ed12",
-   "pkgpath": "Data/7f93338dc6150ea45b387e442e8102da",
-   "size": 49366,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/7f93338dc6150ea45b387e442e8102da"
-  },
-  {
-   "compression": 8,
-   "hash": "65df50cd3f774b7dba4a1b741a61d0511e750f4b",
-   "pkgpath": "Data/8401b9c91b47d6449a4be596c8138a90",
-   "size": 50466,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/8401b9c91b47d6449a4be596c8138a90"
-  },
-  {
-   "compression": 8,
-   "hash": "4ad51582405d12865acc4cf8619118f8276f80c0",
-   "pkgpath": "Data/917dc8bcba1c29c4c8bd325b59088d1c",
-   "size": 49310,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/917dc8bcba1c29c4c8bd325b59088d1c"
-  },
-  {
-   "compression": 8,
-   "hash": "beeb2cbd84f6b07806f2a891d30d740eaac6bcbd",
-   "pkgpath": "Data/9c9078c06443df049a2830962f9dd5ef",
-   "size": 49642,
-   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/9c9078c06443df049a2830962f9dd5ef"
-  },
-  {
-   "compression": 8,
-   "hash": "3079dff0240b08ccd66f66a4ae5c6c7eccd6b9a0",
+   "hash": "5b4e789ddc98f6af21f467303b674d6cd3f5b33e",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 2789740,
+   "size": 2792416,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "5a8037b3c0721ac9e0a66acb9393411968ead5b6",
+   "hash": "000336ee039a96455b30d57e3a7bcecd3a61579e",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 34034424,
+   "size": 34055832,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -118,9 +48,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "7f5b7dbefd6e6f2b76f278eef39328eaf78eabc8",
+   "xfrm_hash": "8d0494db7a49b781bf54b1de89b1ec68d5fd016f",
    "xfrm_path": "D:/UnityProjects/ThereminAR/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-84a73474b97ab994\\libil2cpp.so-d4321dfff780ff29",
-   "xfrm_size": 34035182
+   "xfrm_size": 34056590
   },
   {
    "compression": 8,
@@ -249,7 +179,7 @@
   },
   {
    "compression": 8,
-   "hash": "5c18367ea31b7fc24b76d7da35e71558f3327fdc",
+   "hash": "39d18955a4304d93e6348371c11f882e4f232bd0",
    "pkgpath": "Data/adcae46baa3736748a69f9f489676bd7",
    "size": 49726,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/adcae46baa3736748a69f9f489676bd7"
@@ -263,23 +193,23 @@
   },
   {
    "compression": 8,
-   "hash": "db10e6a9d44b67863ba25a1ac6202614f7533ee7",
+   "hash": "dcfb5c841597239fabd72ceefa8bc5d4ef9251c9",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 35972,
+   "size": 36004,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "8738839ce5b03c885468297f5f7d9f576b1ec4d2",
+   "hash": "6a9cd6bf0db5fbda98dc7917f2a41ec5477dd3bb",
    "pkgpath": "Data/globalgamemanagers.assets",
-   "size": 37596,
+   "size": 37644,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "c14086d9fb939cf1f59b4aef5281278593c31ded",
+   "hash": "524b5b0dcfac9734d56f7a672935a313e47cc757",
    "pkgpath": "Data/level0",
-   "size": 24020,
+   "size": 8824,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level0"
   },
   {
@@ -291,9 +221,9 @@
   },
   {
    "compression": 8,
-   "hash": "590b9a7aab53cc3a562380f491dcb6b015d89b38",
+   "hash": "ec0bfd6df25d31a69056630afb97b3a0ab5e059b",
    "pkgpath": "Data/level1",
-   "size": 28344,
+   "size": 25764,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/level1"
   },
   {
@@ -305,10 +235,17 @@
   },
   {
    "compression": 8,
-   "hash": "8a84d73a40ee7ab15981daee3d683a582322cd96",
+   "hash": "aba808621a64f843ca9c4b514f3c9f2d46949301",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 106764,
+   "size": 590698,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "ff67c8ed77090e62e16ddefadddd12f66eb440c6",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 16384,
+   "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets0.assets.resS"
   },
   {
    "compression": 8,
@@ -319,23 +256,23 @@
   },
   {
    "compression": 8,
-   "hash": "1b0de8289b8bb8ed07c0e65ef1c9400e831f3c27",
+   "hash": "ca6132c5e6398fe293d68937774cc6572a2bfbe0",
    "pkgpath": "Data/sharedassets1.assets",
-   "size": 7328,
+   "size": 11672,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.assets"
   },
   {
    "compression": 8,
-   "hash": "cbc6a7159b79dc74a5b84cfc99f63eddb26236f8",
+   "hash": "fd7db9479672d469da6cd70f2b8e036d38926de6",
    "pkgpath": "Data/sharedassets1.assets.resS",
-   "size": 349552,
+   "size": 808360,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.assets.resS"
   },
   {
    "compression": 8,
-   "hash": "6ca795437ee0f88ebd1fb2226a72cd6f51b89d4d",
+   "hash": "de94131b9445861e52524496b965ca6ee1c01c98",
    "pkgpath": "Data/sharedassets1.resource",
-   "size": 5985152,
+   "size": 4541920,
    "src": "D:/UnityProjects/ThereminAR/Temp/StagingArea/Data/sharedassets1.resource"
   },
   {
